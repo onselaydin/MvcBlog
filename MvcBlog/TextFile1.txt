@@ -1,0 +1,61 @@
+﻿Diagramdan database oluştur.
+html css Tasarım bul. örnek : bestgfx.com
+vs.net de boş(empty)yada basic bir mvc proje oluştur.
+https://www.youtube.com/watch?v=uJfZZMTetg0
+
+firefox debug da 3d görünümde siteyi incele.
+
+Masterpage imiz Views klasöründe _ViewStart.cshtml dosyamızdır.
+Tasarımımızın master elemanlarını 
+örneğin: menu header footer gibi yerlerin html css kodlarını _Layout.cshtml dosyasına aktar.
+App_Start/routeConfig.cs dosyamda default klasörüm ve sayfam belirlenir. Home ve index
+
+Yeni bir empty controller ekle. İsmi HomeController olsun.
+Oluşan Controllerın public index() yazısına sağ click yeni bir View oluşturalım.
+(sadece use layout master page kutucuğu işaretli kalsın.)
+
+Solda server explorerdan vertabanı bağlantısı oluştur.
+
+Partial View Widget oluşturacağız ve sayfamıza ekleyeceğiz.
+
+HomeController.cs e KategoriGetir metodu oluştur. Sonra sağ click add Viewe tıkla. 
+sadece create partialView kutucuğu dolu olsun.
+
+ENTITY FRAMEWORK
+Toolsdan Extent,on and update den aramaya power tools yazıp entity framework code first ü ekle.
+Projede modele  sağ click add new itemda ado net entity data model ekle. Tipi code first from database olsun.
+Pluralize or singularize generated object names kutucuğu dolu olsun.
+
+
+Yeni controller ve Viewını oluşturma.
+Sağ tuş yeni controller Empty Controller Ekle. örneğin Makale,Yazar,Etiket
+
+
+Membership Yapımı
+www.youtube.com/watch?v=w3v6WADWhyA
+developer command prompt aç
+>aspnet_regsql   (Burada enter yapınca wizard açılacak. DB ni seç  ve kurulumu tamamla. Kullanıcı giriş tablolarınu
+otomatik oluşturacaktır)
+burada kullanılacak diğer komutlar(clrver,guidgen,help, clrver -all)
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config de machine.config dosyasını aç
+ membership,profile ve rolemanager taglerini kopyala ve web.configdeki system.web in içine yapıitır.
+
+
+ Not: 'AspNetSqlProfileProvider' girdisi zaten eklenmişti. diye bir hata veriyorsa. 
+ tüm Sqlconnection string tagları arasına <clear/> tagını ekle
+
+
+www.youtube.com/watch?v=feNSFKzOM2E
+
+update,delete,listeleme.
+Yönetime Comtrollerda  return View(context.Kategori.ToList()); oluşturduk. Metoda sağ click add View.
+Template den List'i seç. Sonra Hangi model olduğunu seçiyoruz.hidden id field unutma.
+
+AJAX (jquery ajax kullanılıyor.)
+www.youtube.com/watch?v=b7Ygijc2Do8
+
+
+iisexpress.exe /path:C:\Windows\Microsoft.NET\Framework\v4.0.30319\ASP.NETWebAdminFiles /vpath:/WebAdmin /port:59574 /clr:4.0 /ntlm
+
+localhost:59574/webadmin/default.aspx?a­pplicationPhysicalPath=C:\Users\o.aydin\Documents\Visual Studio 2015\Projects\MvcBlog\&applicatio­nUrl=/

@@ -1,0 +1,42 @@
+﻿@using MvcBlog.Controllers;
+
+@{ 
+	Layout = null;
+}
+@model IEnumerable<MvcBlog.Models.Makale>
+
+
+
+
+
+@foreach (var makale in Model)
+{
+
+
+	<!--/top-news-->
+	<div class="top-news">
+		<div class="top-inner">
+			
+			<div class="col-md-6 top-text two">
+				<a href="/Makale/Detay/@makale.MakaleId"><img src="@makale.Resimler.OrtaResimYol" class="img-responsive" alt=""></a>
+				<h5 class="top"><a href="/Makale/Detay/@makale.MakaleId">@makale.Baslik</a></h5>
+				<p>@Html.Kisalt(makale.Icerik)</p>
+				<p>@makale.YayimTarihi.Value.ToString("MMMM yyyy")<a class="span_link" href="/Makale/TariheGoreListele?yil=@makale.YayimTarihi.Value.Year&ay=@makale.YayimTarihi.Value.Month">
+					<span class="glyphicon glyphicon-comment"></span>
+					@makale.Yorumlar.Count </a>
+
+					<a class="begen" href="javascript:void(0)" data-Id="@makale.MakaleId" ><span class="glyphicon glyphicon-hand-up" ></span>Beğen (@makale.Begeni)</a>
+
+				<a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>@makale.Goruntulenme </a>
+				<a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+				
+				</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	   
+	</div>
+	<!--//top-news-->
+
+
+}

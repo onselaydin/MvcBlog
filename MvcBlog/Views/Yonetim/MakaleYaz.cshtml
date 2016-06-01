@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "MakaleYaz";
+}
+
+<h2>Yeni Makale Oluştur</h2>
+
+@using (Html.BeginForm("MakaleYaz","Yonetim",FormMethod.Post,new { enctype = "multipart/form-data" }))
+{
+    <div class="coment-form">
+        <table>
+            <tr>
+                <td>Başlık</td>
+                <td><input type="text" name="Baslik" value="" placeholder="Başlık Giriniz" /></td>
+            </tr>
+
+            <tr>
+                <td>Kategori</td>
+                <td>
+                    <select name="KategoriId">
+                        @foreach (var kategori in ViewBag.Kategoriler)
+                        {
+                            <option value="@kategori.KategoriId">@kategori.Adi</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Etiketler</td>
+                <td><input type="text" name="etiketler" value="" /></td>
+            </tr>
+
+            <tr>
+                <td>Resim</td>
+                <td><input type="file" name="resim" value="" /> </td>
+            </tr>
+
+            <tr>
+                <td>İçerik</td>
+                <td><textarea name="Icerik" placeholder="Makale İçeriğini Giriniz" cols="100" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" name="btnEkle" value="kaydet" /></td>
+            </tr>
+        </table>
+    </div>
+}

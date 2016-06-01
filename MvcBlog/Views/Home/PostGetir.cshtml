@@ -1,0 +1,30 @@
+﻿@{ 
+    Layout = null;
+}
+<div class="top-news" id="Fresh">
+    <div class="edit-pics">
+
+        <ul>
+            @{MvcBlog.Models.Makale m = new MvcBlog.Models.Makale();
+            }
+
+            @foreach (var pop in ViewBag.Fresh)
+            {
+                <li>
+                    <figure>
+                        <a href="">
+                            @*<img src="@pop.Resimler.KucukResimYol" alt="" />*@
+                        </a>
+                    </figure>
+                    <div class="text">
+                        <a href="">@pop.Baslik</a>
+                        <a href="" class="categorie-grids">{ @pop.Kategori.Adi }</a>
+                    </div>
+                </li>
+            }
+
+        </ul>
+
+    </div>
+
+</div>

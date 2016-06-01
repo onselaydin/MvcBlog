@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<MvcBlog.Models.Kategori>
+    @{ 
+        Layout = null;
+    }
+<div class="categorie-grids">
+
+    <h5>Kategori</h5>
+    <ul>
+        @foreach (var kat in Model)
+        {
+             <li><a href="/Kategori/Index/@kat.KategoriId">@kat.Adi (@kat.Makale.Count)</a> </li>
+        }
+       
+    </ul>
+</div>
+
