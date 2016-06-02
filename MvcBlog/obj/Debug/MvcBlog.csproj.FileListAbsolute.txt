@@ -26,3 +26,31 @@ c:\users\o.aydin\documents\visual studio 2015\Projects\MvcBlog\MvcBlog\bin\Entit
 c:\users\o.aydin\documents\visual studio 2015\Projects\MvcBlog\MvcBlog\bin\EntityFramework.SqlServer.dll
 c:\users\o.aydin\documents\visual studio 2015\Projects\MvcBlog\MvcBlog\bin\EntityFramework.xml
 c:\users\o.aydin\documents\visual studio 2015\Projects\MvcBlog\MvcBlog\bin\EntityFramework.SqlServer.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\MvcBlog.dll.config
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\MvcBlog.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\MvcBlog.pdb
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\Antlr3.Runtime.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\EntityFramework.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\EntityFramework.SqlServer.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Helpers.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Mvc.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Optimization.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Razor.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.Razor.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\WebGrease.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\EntityFramework.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\EntityFramework.SqlServer.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Helpers.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Mvc.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Optimization.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.Razor.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\System.Web.WebPages.Razor.xml
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\bin\Antlr3.Runtime.pdb
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\obj\Debug\MvcBlog.csprojResolveAssemblyReference.cache
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\obj\Debug\MvcBlog.dll
+C:\Users\o.aydin\Documents\MvcBlog\MvcBlog\obj\Debug\MvcBlog.pdb

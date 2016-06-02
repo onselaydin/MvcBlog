@@ -1,0 +1,1 @@
+Data Source=BIM06\SQLEXPRESS;Initial Catalog=B627_Blog;Persist Security Info=True;User ID=sa;Password=123456

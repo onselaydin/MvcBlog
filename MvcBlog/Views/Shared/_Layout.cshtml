@@ -138,33 +138,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-9 main">
+		<div class="col-md-6 main">
 			@RenderBody()
 			<hr />
 			<div class="clearfix"> </div>
 		   
-			<div class="banner-right-text">
-				<h3 class="tittle">News  <i class="glyphicon glyphicon-facetime-video"></i></h3>
-				<!--/general-news-->
-				<div class="general-news">
-					<div class="general-inner">
-						@{
-							Html.RenderAction("PostGetir", "Home");
-						}
-					</div>
-				</div>
-				<div class="general-news">
-					<div class="general-inner">
-						@{
-							Html.RenderAction("EtiketGetir", "Home");
-						}
-					</div>
-				</div>
-				<!--//general-news-->
-				<!--/news-->
-				<!--/news-->
-			</div>
-			<div class="clearfix"> </div>
+			
 
 
 
@@ -227,7 +206,7 @@
 										};
 										*/
 
-										$().UItoTop({ easingType: 'easeOutQuart' });
+										//$().UItoTop({ easingType: 'easeOutQuart' });
 
 									});
 	</script>

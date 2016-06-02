@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MakaleListesi.aspx.cs" Inherits="MvcBlog.WebApi.Process.MakaleListesi" %>
