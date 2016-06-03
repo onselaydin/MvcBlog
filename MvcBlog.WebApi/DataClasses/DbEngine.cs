@@ -70,7 +70,7 @@ namespace MvcBlogDbEngine
         {
             CloseConnection();
         }
-        public object ReadData(PType dataType, List<DbParam> values, RTypes returnType, bool extraFields = false, string tmpQuery = "")
+        public object ReadData(PType dataType, List<DbParam> values, RTypes returnType, bool extraFields = true, string tmpQuery = "")
         {
             var query = DataQueries.Queries[dataType];
 
@@ -125,7 +125,7 @@ namespace MvcBlogDbEngine
             try
             {
                 reader = comm.ExecuteReader();
-                txn.Commit();
+               // txn.Commit();
 
                 switch (query.ResultType)
                 {
@@ -180,9 +180,9 @@ namespace MvcBlogDbEngine
 
                 reader.Close();
             }
-            catch //(SqlException ex)
+            catch (SqlException ex)
             {
-                //throw ex;
+                throw ex;
             }
             CloseConnection();
 
