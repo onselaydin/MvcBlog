@@ -70,7 +70,7 @@ namespace MvcBlogDbEngine
         {
             CloseConnection();
         }
-        public object ReadData(PType dataType, List<DbParam> values, RTypes returnType, bool extraFields = true, string tmpQuery = "")
+        public object ReadData(PType dataType, List<DbParam> values, RTypes returnType, bool extraFields = false, string tmpQuery = "")
         {
             var query = DataQueries.Queries[dataType];
 

@@ -1,1 +1,1 @@
-select top 10 Baslik,YayimTarihi from Makale
+exec MakaleListesi
