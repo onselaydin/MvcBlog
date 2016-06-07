@@ -1,0 +1,55 @@
+﻿
+
+
+@{
+    ViewBag.Title = "IndirmeListesi";
+}
+@model IEnumerable<MvcBlog.Models.Indirmeler>
+@using MvcBlog.Models
+<h2>IndirmeListesi</h2>
+
+<Indirmeler>
+    <div align="center">
+        <h1 align="center" style="background-color:aqua; color:maroon;border-radius:25px; box-shadow:10px 10px 10px 10px yellow; width:800px;">Indirmeler</h1>
+
+    </div>
+<hr />
+<div align="center">
+    <a href="Yonetim/Create">
+        <b style="font-size:25px" align="center">Create new</b>
+    </a>
+
+</div>
+<br />
+<br />
+<table align="center"  style="background-image:url(Images/Baroque-485x728.jpg); 
+background-color:darkgreen;border:double solid maroon; font-weight:bold;color:white;
+padding:5px 8px 4px 10px; border-color:white;font-size:20px; border-radius:25px; 
+box-shadow:10px 10px 10px 10px maroon" border="1">
+
+    <tr>
+        <th width="10%">SNo</th>
+        <th>DosyaAdi</th>
+        <th>DosyaAciklama</th>
+        <th>DosyaBoyutu</th>
+        <th>Link</th>
+        <th>EklemeTarihi</th>
+    </tr>
+
+    @{ 
+        foreach (Indirmeler item in Model)
+        {
+            int n = item.SNo;
+            <tr>
+                <td>@item.SNo</td>
+                <td>@item.DosyaAdi</td>
+                <td>@item.DosyaAciklama</td>
+                <td>@item.DosyaBoyutu</td>
+                <td>@item.Link</td>
+                <td>@item.EklemeTarihi</td>
+
+            </tr>
+        }
+    }
+
+</table>

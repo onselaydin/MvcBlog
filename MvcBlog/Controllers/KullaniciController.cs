@@ -27,7 +27,7 @@ namespace MvcBlog.Controllers
                 Guid id = (Guid)Membership.GetUser(kullaniciAdi).ProviderUserKey;
                 Session["Kullanici"] = context.Kullanici.FirstOrDefault(x => x.YazarId == id);
 
-                return RedirectToAction("Index", "Home");
+                 RedirectToAction("Index", "Yonetim");
             }
             else
             {

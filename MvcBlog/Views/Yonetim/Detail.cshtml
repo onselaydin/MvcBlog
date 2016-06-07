@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+@using MvcBlog.Models
+@model Indirmeler
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Detail</title>
+
+</head>
+<body>
+    <div>
+        <table  border="1" align="center" style="background-image:url(/images/colorful_ride-wide.jpg); background-color:#3D0B0B;
+         border:double solid maroon; font-weight:bold; color:white; padding:5px 8px 4px 10px; border-color:white; font-size:20px;
+         border-radius:25px; box-shadow:10px 10px 10px 10px maroon; font-weight:bold">
+
+            <tr>
+                <td>SNo</td>
+                <td>@Model.SNo</td>
+            </tr>
+            <tr>
+                <td>Dosya Adı</td>
+                <td>@Model.DosyaAdi</td>
+            </tr>
+            <tr>
+                <td>Açıklama</td>
+                <td>@Model.DosyaAciklama</td>
+            </tr>
+            <tr>
+                <td>Dosya Boyutu</td>
+                <td>@Model.DosyaBoyutu</td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td>@Model.Link</td>
+            </tr>
+            <tr>
+                <td>Tarih</td>
+                <td>@Model.EklemeTarihi</td>
+            </tr>
+
+        </table>
+
+              
+    </div>
+</body>
+</html> 

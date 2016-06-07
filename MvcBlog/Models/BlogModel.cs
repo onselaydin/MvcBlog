@@ -4,7 +4,9 @@ namespace MvcBlog.Models
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Collections.Generic;
     public partial class BlogModel : DbContext
     {
         public BlogModel()
@@ -128,5 +130,8 @@ namespace MvcBlog.Models
                 .HasForeignKey(e => e.KapakResimId);
             
         }
+
+        
+
     }
 }

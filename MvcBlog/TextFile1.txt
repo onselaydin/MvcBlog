@@ -40,6 +40,9 @@ burada kullanılacak diğer komutlar(clrver,guidgen,help, clrver -all)
 
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config de machine.config dosyasını aç
  membership,profile ve rolemanager taglerini kopyala ve web.configdeki system.web in içine yapıitır.
+ aspnet_Roles tablosuna admin ve yazar rolleri ekle.
+ aspnet_Kullanici tablosuna kullanıcıları ekle.
+ aspnet_UsersInRoles tablosuna kullanıcı ve rolünü eklemeyi unutma.
 
 
  Not: 'AspNetSqlProfileProvider' girdisi zaten eklenmişti. diye bir hata veriyorsa. 

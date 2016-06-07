@@ -139,7 +139,10 @@
     <Compile Include="Models\aspnet_Users.cs" />
     <Compile Include="Models\aspnet_WebEvent_Events.cs" />
     <Compile Include="Models\BlogModel.cs" />
+    <Compile Include="Models\Details.cs" />
     <Compile Include="Models\Etiket.cs" />
+    <Compile Include="Models\Indirmeler.cs" />
+    <Compile Include="Models\IndirmelerContext.cs" />
     <Compile Include="Models\Kategori.cs" />
     <Compile Include="Models\Kullanici.cs" />
     <Compile Include="Models\Makale.cs" />
@@ -239,6 +242,8 @@
     <Content Include="Views\Yonetim\Kategori.cshtml" />
     <Content Include="Views\Yonetim\KategoriEkle.cshtml" />
     <Content Include="Views\Yonetim\KategoriDuzelt.cshtml" />
+    <Content Include="Views\Yonetim\IndirmeListesi.cshtml" />
+    <Content Include="Views\Yonetim\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

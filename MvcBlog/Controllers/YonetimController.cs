@@ -140,12 +140,31 @@ namespace MvcBlog.Controllers
 
             return RedirectToAction("Kategori");
         }
-       public ActionResult KategoriSil(int id)
+        public ActionResult KategoriSil(int id)
         {
             context.Kategori.Remove(context.Kategori.FirstOrDefault(x => x.KategoriId == id));
             context.SaveChanges();
             return RedirectToAction("Kategori");
                 
         }
+
+
+        //Indirmeler
+        Details ds = new Details();
+        IndirmelerContext DC = new IndirmelerContext();
+
+        public ActionResult IndirmeListesi()
+        {
+            List<Indirmeler> IndirmeListesi = DC.GetIndirmeler();
+            return View(IndirmeListesi);
+
+        }
+
+        public ActionResult Detail(int id)
+        {
+            Indirmeler objIndirmeListesi = DC.GetDosya(id);
+            return View(objIndirmeListesi);
+        }
+
     }
 }
