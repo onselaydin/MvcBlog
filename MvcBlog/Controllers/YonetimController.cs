@@ -14,7 +14,7 @@ namespace MvcBlog.Controllers
     using System.Data.Entity;
 
     [Authorize(Roles ="Admin")]
-    [Authorize(Roles ="Yazar")]
+   // [Authorize(Roles ="Yazar")]
     public class YonetimController : Controller
     {
         // GET: Yonetim
@@ -155,6 +155,7 @@ namespace MvcBlog.Controllers
 
         public ActionResult IndirmeListesi()
         {
+            ViewBag.Tip = 1;
             List<Indirmeler> IndirmeListesi = DC.GetIndirmeler();
             return View(IndirmeListesi);
 
@@ -162,8 +163,63 @@ namespace MvcBlog.Controllers
 
         public ActionResult Detail(int id)
         {
+            ViewBag.Tip = 1;
             Indirmeler objIndirmeListesi = DC.GetDosya(id);
             return View(objIndirmeListesi);
+        }
+        public ActionResult Create()
+
+        {
+            return View();
+
+        }
+        
+        [HttpPost]
+        public ActionResult Create(Indirmeler obj)
+        {
+         
+            ds.AddIndirme(obj);
+            return RedirectToAction("IndirmeListesi");
+        }
+
+        public ActionResult Delete(int id)
+        {
+            
+            Indirmeler obj = DC.GetDosya(id);
+
+            return View(obj);
+
+        }
+        [HttpPost]
+
+        public ActionResult Delete(string id)
+
+        {
+            int i = int.Parse(id);
+
+            ds.DeleteIndirme(i);
+            return RedirectToAction("IndirmeListesi");
+
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Indirmeler obj,int id)
+
+        {
+            ds.EditIndirme(obj,id);
+            return RedirectToAction("IndirmeListesi");
+
+
+        }
+
+        public ActionResult Edit(int id)
+
+        {
+            ViewBag.Tip = 1;
+            Indirmeler obj = DC.GetDosya(id);
+
+            return View(obj);
+
         }
 
     }

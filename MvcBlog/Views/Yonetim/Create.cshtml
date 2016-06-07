@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h2>Create</h2>
+
+    <div align="center">
+        <h1 align="center" style="background-color:aqua; color:maroon; border-radius:25px;  box-shadow:10px 10px 10px 10px yellow; width:800px;">
+            Yeni Indirme Oluştur
+        </h1>
+    </div>
+
+    <div>
+
+
+        @using (Html.BeginForm("Create", "Yonetim", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+            <table border="1" align="center" style="background-image:url(/images/colorful_ride-wide.jpg); background-color:#061CC7;
+         border:double solid maroon; font-weight:bold; color:white; padding:5px 8px 4px 10px; border-color:white; font-size:20px;
+         border-radius:25px; box-shadow:10px 10px 10px 10px maroon; font-weight:bold">
+
+                <tr>
+                    <td>@Html.Label("Dosya Adı")</td>
+                    <td>@Html.TextBox("DosyaAdi")</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Açıklama")</td>
+                    <td>@Html.TextBox("DosyaAciklama")</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Dosya Boyutu")</td>
+                    <td>@Html.TextBox("DosyaBoyutu")</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Link")</td>
+                    <td>@Html.TextBox("Link")</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="sb1" value="Create" />
+                    </td>
+                </tr>
+
+            </table>
+
+        }
+        <br />
+        <a href="/" style="font-size:25px;align-content:center">
+            <b align="center">
+                Listeye Dön
+            </b>
+        </a>
+
+
+    </div>
+</body>
+
+</html>

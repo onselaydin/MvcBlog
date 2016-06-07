@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+@using MvcBlog.Models;
+@model Indirmeler
+
+<div align="center">
+<h1 align="center" style="background-color: aqua; color: maroon;border-radius: 15px; box-shadow: 7px 7px 7px 7px darkgreen; width:800px;">Delete Employee Detail</h1>
+            </div>
+<br />
+@using (Html.BeginForm())
+{
+    <b align="center" style="color: red; font-size:30px">@Html.Label("Silinecek Program") / @Html.TextBox("DosyaAdi")</b>
+    <input type="submit" style="font-size: 25px; font-weight: bold" name="sb1" value="Sil" />
+
+    <hr />
+    <br />
+            <br />
+            <div align="center">
+                <a href="/Yonetim/IndirmeListesi" style="font-size: 25px; font-weight: bold">Listeye Dön</a>
+            </div>
+}

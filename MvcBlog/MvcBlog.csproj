@@ -244,6 +244,9 @@
     <Content Include="Views\Yonetim\KategoriDuzelt.cshtml" />
     <Content Include="Views\Yonetim\IndirmeListesi.cshtml" />
     <Content Include="Views\Yonetim\Detail.cshtml" />
+    <Content Include="Views\Yonetim\Create.cshtml" />
+    <Content Include="Views\Yonetim\Delete.cshtml" />
+    <Content Include="Views\Yonetim\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

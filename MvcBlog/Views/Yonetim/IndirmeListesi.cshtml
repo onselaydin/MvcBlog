@@ -1,11 +1,10 @@
-﻿
-
-
-@{
+﻿@{
     ViewBag.Title = "IndirmeListesi";
 }
 @model IEnumerable<MvcBlog.Models.Indirmeler>
 @using MvcBlog.Models
+
+
 <h2>IndirmeListesi</h2>
 
 <Indirmeler>
@@ -15,7 +14,7 @@
     </div>
 <hr />
 <div align="center">
-    <a href="Yonetim/Create">
+    <a href="Create">
         <b style="font-size:25px" align="center">Create new</b>
     </a>
 
@@ -34,6 +33,7 @@ box-shadow:10px 10px 10px 10px maroon" border="1">
         <th>DosyaBoyutu</th>
         <th>Link</th>
         <th>EklemeTarihi</th>
+        <th>Operasyon</th>
     </tr>
 
     @{ 
@@ -47,6 +47,11 @@ box-shadow:10px 10px 10px 10px maroon" border="1">
                 <td>@item.DosyaBoyutu</td>
                 <td>@item.Link</td>
                 <td>@item.EklemeTarihi</td>
+                <td>
+                    <a href="Detail/@item.SNo">Detay</a>
+                    <p><a href="Delete/@item.SNo">Sil</a>
+                    <p><a href="Edit/@item.SNo">Güncelle</a>
+                </td>
 
             </tr>
         }
